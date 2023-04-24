@@ -1,12 +1,14 @@
-import React from 'react'
+import {Fragment} from 'react'
 
-const NavbarItem = () => {
+const NavbarItem = (props) => {
   return (
-    <li className="nav-item">
-          <p className="nav-link active" aria-current="page" >
-             Home
-          </p>
-    </li>
+    <Fragment>
+      <li className="nav-item">
+            <p className="nav-link active" aria-current="page" >
+              {props.texto}
+            </p>
+      </li>
+    </Fragment>
   )
 }
 
