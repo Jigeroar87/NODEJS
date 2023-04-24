@@ -6,8 +6,6 @@ const Navbar = (props) => {
 console.log("🚀 ~ file: Navbar.js:5 ~ Navbar ~ props:", props)
  //const NavbarLogo= "CODER HOUSE"
  
- const items =['Inicio','Categorias','Sobre Nosotros','Contacto']
- 
  return (
     <nav className= {
           props.className || "navbar navbar-expand-lg navbar-light bg-light"
@@ -22,7 +20,7 @@ console.log("🚀 ~ file: Navbar.js:5 ~ Navbar ~ props:", props)
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">
-          {items.map((texto,index)=> (
+          {props.items?.map((texto,index)=> (
               <NavbarItem key={index} texto={texto}/>
           ))}
 
