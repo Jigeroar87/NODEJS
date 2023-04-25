@@ -1,6 +1,7 @@
 import React from 'react'
 import NavbarItem from './NavbarItem'
 import './Navbar.css'
+import CartWidget from './CartWidget'
 
 const Navbar = (props) => {
 console.log("🚀 ~ file: Navbar.js:5 ~ Navbar ~ props:", props)
@@ -8,7 +9,7 @@ console.log("🚀 ~ file: Navbar.js:5 ~ Navbar ~ props:", props)
  
  return (
     <nav className= {
-          props.className || "navbar navbar-expand-lg navbar-light bg-light"
+          props.className || "navbar navbar-expand-lg navbar-dark bg-primary"
           }  
     >
   <div className="container-fluid">
@@ -26,6 +27,7 @@ console.log("🚀 ~ file: Navbar.js:5 ~ Navbar ~ props:", props)
 
       </ul>
     </div>
+    <CartWidget/>
   </div>
 </nav>
   )

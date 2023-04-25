@@ -3,7 +3,7 @@ import {Fragment} from 'react'
 const NavbarItem = (props) => {
   return (
     <Fragment>
-      <li className="nav-item">
+      <li className="nav-item nav-link text-dark">
             <p className="nav-link active" aria-current="page" >
               {props.texto}
             </p>
