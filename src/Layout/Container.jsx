@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import Footer from '../Components/Footer/Footer'
+import Navbar from '../Components/Navbar/Navbar'
 
 const Container = (props) => {
     return (
@@ -8,7 +9,7 @@ const Container = (props) => {
                     NavbarLogoCss={'white'} 
                     NavbarLogo={'Funnybox'} 
             />
-            /*Acá va el contenido dinámico */
+            {/*Acá va el contenido dinámico */}
             {props.children}
             <Footer/>
         </Fragment>
