@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/NODEJS/static/css/main.12fb06e0.css",
-    "main.js": "/NODEJS/static/js/main.a30245e8.js",
+    "main.js": "/NODEJS/static/js/main.28865475.js",
     "static/js/787.95a8b396.chunk.js": "/NODEJS/static/js/787.95a8b396.chunk.js",
+    "static/media/batman.jpg": "/NODEJS/static/media/batman.cab59e6aa8653c95d1de.jpg",
     "index.html": "/NODEJS/index.html",
     "main.12fb06e0.css.map": "/NODEJS/static/css/main.12fb06e0.css.map",
-    "main.a30245e8.js.map": "/NODEJS/static/js/main.a30245e8.js.map",
+    "main.28865475.js.map": "/NODEJS/static/js/main.28865475.js.map",
     "787.95a8b396.chunk.js.map": "/NODEJS/static/js/787.95a8b396.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12fb06e0.css",
-    "static/js/main.a30245e8.js"
+    "static/js/main.28865475.js"
   ]
 }
