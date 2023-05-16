@@ -6,6 +6,8 @@ import Sobrenosotros from '../Pages/Sobrenosotros'
 import Zonasdereparto from '../Pages/Zonasdereparto'
 import Contactanos from '../Pages/Contactanos'
 import Detalleproductos from '../Pages/Detalleproductos'
+import Categorias  from '../Pages/Categorias'
+
 import Navbar from '../Components/Navbar/Navbar'
 
 const Rutas = () => {
@@ -25,6 +27,14 @@ const Rutas = () => {
         {
             path:"/Productos",
             name:"Productos"
+        },
+        {
+            path:"/Categorias/1",
+            name:"Alcancias"
+        },
+        {
+            path:"/Categorias/2",
+            name:"Lienzos"
         },
         {
             path:"/Sobrenosotros",
@@ -50,7 +60,8 @@ const Rutas = () => {
             <Route path='/Sobrenosotros' element={<Sobrenosotros/>} />
             <Route path='/Zonasdereparto' element={<Zonasdereparto/>} />
             <Route path='/Contactanos' element={<Contactanos/>} />
-            <Route path='/item/:id' element={<Detalleproductos/>} />
+            <Route path='/Productos/:id' element={<Detalleproductos/>} />
+            <Route path='/Categorias/:idcategoria' element={<Categorias/>} />        
         </Routes>
     </BrowserRouter>
   )

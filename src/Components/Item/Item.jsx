@@ -9,7 +9,7 @@ const Item = (props) => {
         <h3 className='fs-5'>{titulo}</h3>
         <p className='fs-6'>{descripcion}</p>
         {/* <Link to={`/item/${id}`} className='btn btn-warning' >Ver Mas</Link> */}
-        <button onClick={()=>navigate(`/item/${id}`)}>Ver mas</button>
+        <button onClick={()=>navigate(`/Productos/${id}`)}>Ver mas</button>
     </div>
   )
 }

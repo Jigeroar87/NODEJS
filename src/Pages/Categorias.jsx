@@ -1,15 +1,18 @@
-import React, { Fragment, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import React, { Fragment, useState } from "react";
+import { useParams } from "react-router-dom";
 
-const Detalleproductos = () => {
+import Item from '../Components/Item/Item'
+
+const Categorias = () => {
   
-    const navigate = useNavigate();
-    const { id } = useParams(); 
+    const { idcategoria } = useParams(); 
   
+console.log("idcat "+idcategoria);
+
     // o 1 o 2
   
-    const [item, setItem] = useState({});
-    const [loading, setLoading] = useState(true);
+    const [item] = useState({});
+
   
     const items = [
       {
@@ -38,43 +41,31 @@ const Detalleproductos = () => {
     }
   ]
   
-    useEffect(() => {
+    
+        const filter = items.filter((item) => item.idcategoria === idcategoria);
+        console.log("filter");
+        console.log(filter);
+                
+        console.log("item");
+        console.log(item); 
   
-      setTimeout(() => {
-        const filter = items.find((item) => item.id === id);
-        setItem(filter)
-        setLoading(false)
-      }, 2000);
+  return (
+    <Fragment>
+    <h1>Producto</h1>
   
-  
-  
-    }, []);
-  
-    const agregarAlCarrito = () => {
-        // agarrar el item y guardar en el state del carrito 
-        navigate('/checkout')
+    <div className='d-flex my-5'>
+      {
+      
+      filter.map((item) => (
+        <Item key={item.id} {...item} />
+        
+      ))
+      
       }
+      
+    </div>
+    </Fragment>
+  )
+}
 
-    return (
-        <Fragment>
-        <button className="btn btn-dark" onClick={() => navigate(-1)}>
-          Volver
-        </button>
-        <hr />
-        {loading && <h1>Cargando..</h1>}
-        {item && !loading && (
-          <div>
-            <h1>{item.titulo}</h1>
-            <p>{item.descripcion}</p>
-            <p>Id es :{item.id}</p>
-  
-  
-            <h1>ACA VA MI COUNTER</h1>
-            <button onClick={agregarAlCarrito} >Agregar al carrito</button>
-          </div>
-        )}
-      </Fragment>
-  );
-};
-
-export default Detalleproductos;
+export default Categorias
