@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Item from '../Components/Item/Item'
-
+import Darkvader from '../../src/Assets/Alcancia_Darkvader.JPG'
+import Hulk from '../../src/Assets/Alcancia_Hulk.JPG'
+import Nopoygonta from '../../src/Assets/Lienzo_Nopoygonta.JPG'
+import Payasito from '../../src/Assets/Lienzo_Payasito.JPG'
 
 const Productos = () => {
 
@@ -9,27 +12,31 @@ const Productos = () => {
         {
             id:"1",
             idcategoria:"1",
-            titulo:"Alcancias 1",
-            descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic."
-        },
+            titulo:"Alcancia Darkvader",
+            descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+            imagen: Darkvader
+          },
         {
           id:"2",
           idcategoria:"1",
-          titulo:"Alcancias 2",
-          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic."
-      },
-        {
-            id:"3",
-            categoria:"2",
-            titulo:"Lienzos 1",
-            descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic."
+          titulo:"Alcancia Hulk",
+          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+          imagen: Hulk
         },
         {
+            id:"3",
+            idcategoria:"2",
+            titulo:"Lienzo Nopo y Gonta",
+            descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+            imagen: Nopoygonta
+          },
+        {
           id:"4",
-          categoria:"2",
-          titulo:"Lienzos 2",
-          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic."
-      }
+          idcategoria:"2",
+          titulo:"Lienzo Payasito",
+          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+          imagen: Payasito
+        }
     ]
   
   
