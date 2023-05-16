@@ -5,6 +5,7 @@ import Productos from '../Pages/Productos'
 import Sobrenosotros from '../Pages/Sobrenosotros'
 import Zonasdereparto from '../Pages/Zonasdereparto'
 import Contactanos from '../Pages/Contactanos'
+import Detalleproductos from '../Pages/Detalleproductos'
 import Navbar from '../Components/Navbar/Navbar'
 
 const Rutas = () => {
@@ -41,6 +42,7 @@ const Rutas = () => {
             <Route path='/Sobrenosotros' element={<Sobrenosotros/>} />
             <Route path='/Zonasdereparto' element={<Zonasdereparto/>} />
             <Route path='/Contactanos' element={<Contactanos/>} />
+            <Route path='/item/:id' element={<Detalleproductos/>} />
         </Routes>
     </BrowserRouter>
   )
