@@ -13,28 +13,28 @@ const Productos = () => {
             id:"1",
             idcategoria:"1",
             titulo:"Alcancia Darkvader",
-            descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+            descripcion:"$10",
             imagen: Darkvader
           },
         {
           id:"2",
           idcategoria:"1",
           titulo:"Alcancia Hulk",
-          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+          descripcion:"$10",
           imagen: Hulk
         },
         {
             id:"3",
             idcategoria:"2",
             titulo:"Lienzo Nopo y Gonta",
-            descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+            descripcion:"$8",
             imagen: Nopoygonta
           },
         {
           id:"4",
           idcategoria:"2",
           titulo:"Lienzo Payasito",
-          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
+          descripcion:"$8",
           imagen: Payasito
         }
     ]

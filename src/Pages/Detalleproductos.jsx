@@ -60,7 +60,7 @@ const Detalleproductos = () => {
   
     const agregarAlCarrito = () => {
         // agarrar el item y guardar en el state del carrito 
-        navigate('/checkout')
+        navigate('/')
       }
 
     return (
@@ -73,11 +73,8 @@ const Detalleproductos = () => {
         {item && !loading && (
           <div>
             <h1>{item.titulo}</h1>
+            <img src={item.imagen} alt="..."/>
             <p>{item.descripcion}</p>
-            <p>Id es :{item.id}</p>
-  
-  
-            <h1>ACA VA MI COUNTER</h1>
             <button onClick={agregarAlCarrito} >Agregar al carrito</button>
           </div>
         )}
