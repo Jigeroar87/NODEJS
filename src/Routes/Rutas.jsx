@@ -9,6 +9,14 @@ import Detalleproductos from '../Pages/Detalleproductos'
 import Navbar from '../Components/Navbar/Navbar'
 
 const Rutas = () => {
+    
+    const navbar_brand = [
+        {
+            path:"/",
+            name:"FunnyBox"
+        }
+    ]
+    
     const navbar_items = [
         {
             path:"/",
@@ -35,7 +43,7 @@ const Rutas = () => {
 
   return (
     <BrowserRouter>
-        <Navbar navbar_items={navbar_items}/>
+        <Navbar navbar_brand={navbar_brand} navbar_items={navbar_items}/>
         <Routes>
             <Route path='/' element={<Inicio/>} />
             <Route path='/Productos' element={<Productos/>} />
