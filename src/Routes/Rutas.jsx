@@ -7,6 +7,7 @@ import Zonasdereparto from '../Pages/Zonasdereparto'
 import Contactanos from '../Pages/Contactanos'
 import Detalleproductos from '../Pages/Detalleproductos'
 import Categorias  from '../Pages/Categorias'
+import Footer from '../Components/Footer/Footer'
 
 import Navbar from '../Components/Navbar/Navbar'
 
@@ -64,6 +65,7 @@ const Rutas = () => {
             <Route path='/Productos/:id' element={<Detalleproductos/>} />
             <Route path='/Categorias/:idcategoria' element={<Categorias/>} />        
         </Routes>
+        <Footer></Footer>
     </BrowserRouter>
   )
 }

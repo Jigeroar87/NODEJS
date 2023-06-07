@@ -3,7 +3,6 @@ import './Navbar.css'
 import CartWidget from './CartWidget'
 import {NavLink} from 'react-router-dom'
 import NavbarBrand from './NavbarBrand'
-import NavbarItem from './NavbarItem'
 
 const Navbar = (props) => {
   const {navbar_brand} = props
