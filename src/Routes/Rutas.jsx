@@ -50,10 +50,11 @@ const Rutas = () => {
         },
     ]
 
+    
 
   return (
     <BrowserRouter>
-        <Navbar navbar_brand={navbar_brand} navbar_items={navbar_items}/>
+        <Navbar navbar_brand={navbar_brand}/>
         <Routes>
             <Route path='/' element={<Inicio/>} />
             <Route path='/Productos' element={<Productos/>} />
