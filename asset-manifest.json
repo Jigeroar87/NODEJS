@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NODEJS/static/css/main.12fb06e0.css",
-    "main.js": "/NODEJS/static/js/main.2f35bf1f.js",
+    "main.js": "/NODEJS/static/js/main.c0f10af1.js",
     "static/js/787.95a8b396.chunk.js": "/NODEJS/static/js/787.95a8b396.chunk.js",
     "static/media/Instagram.png": "/NODEJS/static/media/Instagram.a2bc64945a678bb305c9.png",
     "static/media/SobreNosotros.JPG": "/NODEJS/static/media/SobreNosotros.15f9cf06f36db17a8d26.JPG",
@@ -11,13 +11,14 @@
     "static/media/Campana_mes.JPG": "/NODEJS/static/media/Campana_mes.e4417da2553a92a9d8e0.JPG",
     "static/media/Alcancia_Darkvader.JPG": "/NODEJS/static/media/Alcancia_Darkvader.c3b53234385f02157b08.JPG",
     "static/media/Alcancia_Hulk.JPG": "/NODEJS/static/media/Alcancia_Hulk.72cfe2a9fa2cfc2444ac.JPG",
+    "static/media/Zonas_Reparto.JPG": "/NODEJS/static/media/Zonas_Reparto.268e2b6db6d924d79592.JPG",
     "index.html": "/NODEJS/index.html",
     "main.12fb06e0.css.map": "/NODEJS/static/css/main.12fb06e0.css.map",
-    "main.2f35bf1f.js.map": "/NODEJS/static/js/main.2f35bf1f.js.map",
+    "main.c0f10af1.js.map": "/NODEJS/static/js/main.c0f10af1.js.map",
     "787.95a8b396.chunk.js.map": "/NODEJS/static/js/787.95a8b396.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12fb06e0.css",
-    "static/js/main.2f35bf1f.js"
+    "static/js/main.c0f10af1.js"
   ]
 }
