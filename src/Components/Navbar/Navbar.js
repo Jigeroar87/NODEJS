@@ -7,7 +7,7 @@ import NavbarBrand from './NavbarBrand'
 const Navbar = (props) => {
   const {navbar_brand} = props
 return (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <nav className="navbar navbar-expand-md navbar-light fixed-top navBackground fondo__pagina">
       <div className="container-fluid">
             
             <NavbarBrand navbar_brand={navbar_brand}></NavbarBrand>

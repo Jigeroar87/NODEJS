@@ -58,7 +58,8 @@ console.log("idcat "+idcategoria);
   
   return (
     <Fragment>
-    <h1>Producto</h1>
+    <section class="pt-5 section__color min-vh-100 fondo__pagina">
+    <h1>Productos</h1>
   
     <div className='d-flex my-5'>
       {
@@ -71,6 +72,7 @@ console.log("idcat "+idcategoria);
       }
       
     </div>
+    </section>
     </Fragment>
   )
 }

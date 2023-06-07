@@ -65,6 +65,7 @@ const Detalleproductos = () => {
 
     return (
         <Fragment>
+        <section class="pt-5 section__color min-vh-100 fondo__pagina">
         <button className="btn btn-dark" onClick={() => navigate(-1)}>
           Volver
         </button>
@@ -78,6 +79,7 @@ const Detalleproductos = () => {
             <button onClick={agregarAlCarrito} >Agregar al carrito</button>
           </div>
         )}
+        </section>
       </Fragment>
   );
 };
