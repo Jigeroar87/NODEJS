@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/NODEJS/static/css/main.12fb06e0.css",
-    "main.js": "/NODEJS/static/js/main.57ac49a1.js",
+    "main.js": "/NODEJS/static/js/main.591dbadc.js",
     "static/js/787.95a8b396.chunk.js": "/NODEJS/static/js/787.95a8b396.chunk.js",
+    "static/media/Instagram.png": "/NODEJS/static/media/Instagram.a2bc64945a678bb305c9.png",
     "static/media/Lienzo_Payasito.JPG": "/NODEJS/static/media/Lienzo_Payasito.664dd4bef21f2664c38f.JPG",
     "static/media/Lienzo_Nopoygonta.JPG": "/NODEJS/static/media/Lienzo_Nopoygonta.cc42089761b16b82b23b.JPG",
     "static/media/Alcancia_Darkvader.JPG": "/NODEJS/static/media/Alcancia_Darkvader.c3b53234385f02157b08.JPG",
     "static/media/Alcancia_Hulk.JPG": "/NODEJS/static/media/Alcancia_Hulk.72cfe2a9fa2cfc2444ac.JPG",
     "index.html": "/NODEJS/index.html",
     "main.12fb06e0.css.map": "/NODEJS/static/css/main.12fb06e0.css.map",
-    "main.57ac49a1.js.map": "/NODEJS/static/js/main.57ac49a1.js.map",
+    "main.591dbadc.js.map": "/NODEJS/static/js/main.591dbadc.js.map",
     "787.95a8b396.chunk.js.map": "/NODEJS/static/js/787.95a8b396.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.12fb06e0.css",
-    "static/js/main.57ac49a1.js"
+    "static/js/main.591dbadc.js"
   ]
 }
