@@ -61,7 +61,7 @@ console.log("idcat "+idcategoria);
     <section class="pt-5 section__color min-vh-100 fondo__pagina">
     <h1>Productos</h1>
   
-    <div className='d-flex my-5'>
+    <div className='card-group fondo__pagina'>
       {
       
       filter.map((item) => (
