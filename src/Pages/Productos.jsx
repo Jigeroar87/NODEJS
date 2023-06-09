@@ -1,43 +1,18 @@
 import React, { Fragment } from 'react'
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Item from '../Components/Item/Item'
-import Darkvader from '../../src/Assets/Alcancia_Darkvader.JPG'
-import Hulk from '../../src/Assets/Alcancia_Hulk.JPG'
-import Nopoygonta from '../../src/Assets/Lienzo_Nopoygonta.JPG'
-import Payasito from '../../src/Assets/Lienzo_Payasito.JPG'
+
+import { useContext, useState, useEffect } from "react";
+import { dataContext } from "../Components/Context/DataContext";
+import axios from "axios";
 
 const Productos = () => {
 
-    const items = [
-        {
-            id:"1",
-            idcategoria:"1",
-            titulo:"Alcancia Darkvader",
-            descripcion:"$10",
-            imagen: Darkvader
-          },
-        {
-          id:"2",
-          idcategoria:"1",
-          titulo:"Alcancia Hulk",
-          descripcion:"$10",
-          imagen: Hulk
-        },
-        {
-            id:"3",
-            idcategoria:"2",
-            titulo:"Lienzo Nopo y Gonta",
-            descripcion:"$8",
-            imagen: Nopoygonta
-          },
-        {
-          id:"4",
-          idcategoria:"2",
-          titulo:"Lienzo Payasito",
-          descripcion:"$8",
-          imagen: Payasito
-        }
-    ]
+    const [data, setData] = useState([]);
+  
+    useEffect(() => {
+      axios("data.json").then((res) => setData(res.data));
+    }, []);
   
   
   
@@ -48,7 +23,7 @@ const Productos = () => {
     <h1>Productos</h1>
   
     <div className='card-group fondo__pagina'>
-      {items.map((item) => (
+      {data.map((item) => (
         <Item key={item.id} {...item} />
       ))}
     </div>
