@@ -1,0 +1,34 @@
+[
+    {
+        "id":"1",
+        "idcategoria":"1",
+        "titulo":"Alcancia Darkvader",
+        "descripcion":"Descripcion producto",
+        "precio":10,
+        "imagen": "Alcancia_Darkvader.JPG"
+      },
+    {
+      "id":"2",
+      "idcategoria":"1",
+      "titulo":"Alcancia Hulk",
+      "descripcion":"Descripcion producto",
+      "precio":10,
+      "imagen": "Alcancia_Hulk.JPG"
+    },
+    {
+        "id":"3",
+        "idcategoria":"2",
+        "titulo":"Lienzo Nopo y Gonta",
+        "descripcion":"Descripcion producto",
+        "precio":8,
+        "imagen": "Lienzo_Nopoygonta.JPG"
+      },
+    {
+      "id":"4",
+      "idcategoria":"2",
+      "titulo":"Lienzo Payasito",
+      "descripcion":"Descripcion producto",
+      "precio":8,
+      "imagen": "Lienzo_Payasito.JPG"
+    }
+]
