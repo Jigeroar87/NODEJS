@@ -5,8 +5,13 @@ import Hulk from '../../src/Assets/Alcancia_Hulk.JPG'
 import Nopoygonta from '../../src/Assets/Lienzo_Nopoygonta.JPG'
 import Payasito from '../../src/Assets/Lienzo_Payasito.JPG'
 
+import { dataContext } from "../Components/Context/DataContext";
+import { useContext } from "react";
+
 const Detalleproductos = () => {
   
+  const { cart, setCart } = useContext(dataContext);
+
     const navigate = useNavigate();
     const { id } = useParams(); 
   
@@ -15,41 +20,10 @@ const Detalleproductos = () => {
     const [item, setItem] = useState({});
     const [loading, setLoading] = useState(true);
   
-    const items = [
-      {
-          id:"1",
-          idcategoria:"1",
-          titulo:"Alcancia Darkvader",
-          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
-          imagen: Darkvader
-        },
-      {
-        id:"2",
-        idcategoria:"1",
-        titulo:"Alcancia Hulk",
-        descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
-        imagen: Hulk
-      },
-      {
-          id:"3",
-          idcategoria:"2",
-          titulo:"Lienzo Nopo y Gonta",
-          descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
-          imagen: Nopoygonta
-        },
-      {
-        id:"4",
-        idcategoria:"2",
-        titulo:"Lienzo Payasito",
-        descripcion:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto magnam esse quia perspiciatis quam iure debitis. Dolorum soluta, esse in aliquam maiores enim dolor officia perspiciatis quo? Veniam, quidem hic.",
-        imagen: Payasito
-      }
-  ]
-  
     useEffect(() => {
   
       setTimeout(() => {
-        const filter = items.find((item) => item.id === id);
+        const filter = cart.find((item) => item.id === id);
         setItem(filter)
         setLoading(false)
       }, 2000);
@@ -65,7 +39,7 @@ const Detalleproductos = () => {
 
     return (
         <Fragment>
-        <section class="pt-5 section__color min-vh-100 fondo__pagina">
+        <section className="pt-5 section__color min-vh-100 fondo__pagina">
         <button className="btn btn-dark" onClick={() => navigate(-1)}>
           Volver
         </button>
@@ -74,7 +48,7 @@ const Detalleproductos = () => {
         {item && !loading && (
           <div>
             <h1>{item.titulo}</h1>
-            <img src={item.imagen} alt="..."/>
+            <img src={require(`../Assets/${item.imagen}`)} alt="..."/>
             <p>{item.descripcion}</p>
             <button onClick={agregarAlCarrito} >Agregar al carrito</button>
           </div>

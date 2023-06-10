@@ -3,7 +3,7 @@
         "id":"1",
         "idcategoria":"1",
         "titulo":"Alcancia Darkvader",
-        "descripcion":"$10",
+        "descripcion":"Descripcion producto",
         "precio":10,
         "imagen": "Alcancia_Darkvader.JPG"
       },
@@ -11,24 +11,24 @@
       "id":"2",
       "idcategoria":"1",
       "titulo":"Alcancia Hulk",
-      "descripcion":"$10",
+      "descripcion":"Descripcion producto",
       "precio":10,
-      "imagen": "./src/Assets/Alcancia_Hulk.JPG"
+      "imagen": "Alcancia_Hulk.JPG"
     },
     {
         "id":"3",
         "idcategoria":"2",
         "titulo":"Lienzo Nopo y Gonta",
-        "descripcion":"$8",
+        "descripcion":"Descripcion producto",
         "precio":8,
-        "imagen": "./src/Assets/Lienzo_Nopoygonta.JPG"
+        "imagen": "Lienzo_Nopoygonta.JPG"
       },
     {
       "id":"4",
       "idcategoria":"2",
       "titulo":"Lienzo Payasito",
-      "descripcion":"$8",
+      "descripcion":"Descripcion producto",
       "precio":8,
-      "imagen": "./src/Assets/Lienzo_Payasito.JPG"
+      "imagen": "Lienzo_Payasito.JPG"
     }
 ]

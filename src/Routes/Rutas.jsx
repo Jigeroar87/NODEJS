@@ -11,6 +11,8 @@ import Footer from '../Components/Footer/Footer'
 
 import Navbar from '../Components/Navbar/Navbar'
 
+import DataProvider from "../Components/Context/DataContext";
+
 const Rutas = () => {
     
     const navbar_brand = [
@@ -54,6 +56,7 @@ const Rutas = () => {
     
 
   return (
+    <DataProvider>
     <BrowserRouter>
         <Navbar navbar_brand={navbar_brand}/>
         <Routes>
@@ -67,6 +70,7 @@ const Rutas = () => {
         </Routes>
         <Footer></Footer>
     </BrowserRouter>
+    </DataProvider>
   )
 }
 
