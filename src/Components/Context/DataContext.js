@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 export const dataContext = createContext();
 
-const DataProvider = ({ children }) => {
+  const DataProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   const buyProducts = (product) => {

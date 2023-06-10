@@ -17,7 +17,12 @@ const Productos = () => {
       axios("data.json").then((res) => setData(res.data));
     }, []);
 
-  
+    console.log("data");
+    console.log(data);
+    
+        const filter = data.filter((item) => item.idcategoria === "1");
+        console.log("filter");
+        console.log(filter);  
   
     return (
 
@@ -26,7 +31,7 @@ const Productos = () => {
     <h1>Productos</h1>
   
     <div className='card-group fondo__pagina'>
-      {data.map((item) => (
+      {filter.map((item) => (
         <Item key={item.id} {...item} />
       ))}
     </div>

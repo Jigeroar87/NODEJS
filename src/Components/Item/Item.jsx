@@ -7,8 +7,6 @@ import {useContext} from "react";
 
 const Item = (props) => {
 
-  const { buyProducts } = useContext(dataContext);
-
   const {id,titulo,descripcion,imagen} = props;
   const navigate = useNavigate()
   return (
@@ -26,7 +24,7 @@ const Item = (props) => {
                      {() => {
                       //function expression
                       navigate(`/Productos/${id}`);
-                      buyProducts(props); 
+                      //buyProducts(props); 
                        //function call:ejecuta
                        
                     }}

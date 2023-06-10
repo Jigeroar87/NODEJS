@@ -4,7 +4,22 @@ import CartWidget from './CartWidget'
 import {NavLink} from 'react-router-dom'
 import NavbarBrand from './NavbarBrand'
 
+import {useContext, useState, useEffect } from "react";
+import axios from "axios";
+import { dataContext } from "../Context/DataContext";
+
 const Navbar = (props) => {
+
+    const [data, setData] = useState([]);
+    
+
+    useEffect(() => {
+      axios("data.json").then((res) => setData(res.data));
+    }, []);
+
+    console.log("data");
+    console.log(data);
+        
   const {navbar_brand} = props
 return (
   <nav className="navbar navbar-expand-md navbar-light fixed-top navBackground fondo__pagina">
