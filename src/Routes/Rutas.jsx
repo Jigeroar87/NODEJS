@@ -13,6 +13,8 @@ import Navbar from '../Components/Navbar/Navbar'
 
 import DataProvider from "../Components/Context/DataContext";
 
+import GlobalState from "../Components/Context/GlobalContext"
+
 const Rutas = () => {
     
     const navbar_brand = [
@@ -56,6 +58,7 @@ const Rutas = () => {
     
 
   return (
+    
     <DataProvider>
     <BrowserRouter>
         <Navbar navbar_brand={navbar_brand}/>
@@ -71,6 +74,7 @@ const Rutas = () => {
         <Footer></Footer>
     </BrowserRouter>
     </DataProvider>
+    
   )
 }
 

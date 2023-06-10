@@ -6,23 +6,43 @@ import {useContext, useState, useEffect } from "react";
 import axios from "axios";
 import { dataContext } from "../Components/Context/DataContext";
 
+import {collection, getDocs} from 'firebase/firestore'
+import {db} from '../firebase.config'
+
 const Productos = () => {
 
-  
-    
-    const [data, setData] = useState([]);
-    const { buyProducts } = useContext(dataContext);
+  const [productos, setProductos] = useState([]);
+  const [loading,setLoading] = useState(false);
 
-    useEffect(() => {
-      axios("data.json").then((res) => setData(res.data));
-    }, []);
-
-    console.log("data");
-    console.log(data);
+  useEffect(() => {
     
-        const filter = data.filter((item) => item.idcategoria === "1");
-        console.log("filter");
-        console.log(filter);  
+    const getProducts = async()=>{
+
+      setLoading(true)
+      try {
+        
+          const col = collection(db,"productos")
+          const data = await getDocs(col)
+          const result = data.docs.map( doc=>doc={id:doc.id, ...doc.data()})
+          console.log("result")
+          console.log(result)
+          setProductos(result)
+      } catch (error) {
+        console.log(error)
+      }
+
+    }
+
+   getProducts()
+    
+  }, [])
+
+  console.log("productos");
+  console.log(productos);
+
+
+    
+        
   
     return (
 
@@ -31,7 +51,7 @@ const Productos = () => {
     <h1>Productos</h1>
   
     <div className='card-group fondo__pagina'>
-      {filter.map((item) => (
+      {productos.map((item) => (
         <Item key={item.id} {...item} />
       ))}
     </div>
