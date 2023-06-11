@@ -1,7 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import CartWidget from './CartWidget'
-import {NavLink} from 'react-router-dom'
+import {NavLink, Link} from 'react-router-dom'
 import NavbarBrand from './NavbarBrand'
 
 const Navbar = (props) => {
@@ -48,8 +48,13 @@ return (
               </ul>
               
             </div>
-                    
-            <CartWidget></CartWidget>
+        
+            
+
+            <Link className="bi bi-cart4" to={'/CartContent'}>
+            🛒  
+            </Link>        
+            
       </div>
 </nav>
 )

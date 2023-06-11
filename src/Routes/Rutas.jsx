@@ -9,6 +9,8 @@ import Detalleproductos from '../Pages/Detalleproductos'
 import Categorias  from '../Pages/Categorias'
 import Footer from '../Components/Footer/Footer'
 
+import CartContent from '../Components/CartContent/CartContent'
+
 import Navbar from '../Components/Navbar/Navbar'
 
 import DataProvider from "../Components/Context/DataContext";
@@ -24,36 +26,7 @@ const Rutas = () => {
         }
     ]
     
-    const navbar_items = [
-        {
-            path:"/",
-            name:"Inicio"
-        },
-        {
-            path:"/Productos",
-            name:"Productos"
-        },
-        {
-            path:"/Categorias/1",
-            name:"Alcancias"
-        },
-        {
-            path:"/Categorias/2",
-            name:"Lienzos"
-        },
-        {
-            path:"/Sobrenosotros",
-            name:"Sobre nosotros"
-        },
-        {
-            path:"/Zonasdereparto",
-            name:"Zonas de reparto"
-        },
-        {
-            path:"/Contactanos",
-            name:"Contáctanos"
-        },
-    ]
+    
 
     
 
@@ -67,9 +40,11 @@ const Rutas = () => {
             <Route path='/Productos' element={<Productos/>} />
             <Route path='/Sobrenosotros' element={<Sobrenosotros/>} />
             <Route path='/Zonasdereparto' element={<Zonasdereparto/>} />
+            <Route path='/CartContent' element={<CartContent/>} />  
             <Route path='/Contactanos' element={<Contactanos/>} />
             <Route path='/Productos/:id' element={<Detalleproductos/>} />
-            <Route path='/Categorias/:idcategoria' element={<Categorias/>} />        
+            <Route path='/Categorias/:idcategoria' element={<Categorias/>} />
+                  
         </Routes>
         <Footer></Footer>
     </BrowserRouter>

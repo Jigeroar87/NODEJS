@@ -12,10 +12,10 @@ const Detalleproductos = () => {
   
   const { cart, setCart } = useContext(dataContext);
 
+  const { buyProducts } = useContext(dataContext);
+
     const navigate = useNavigate();
     const { id } = useParams(); 
-
-    
   
     // o 1 o 2
   
