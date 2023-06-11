@@ -8,7 +8,10 @@ import {useContext} from "react";
 const Item = (props) => {
 
   const {id,titulo,descripcion,imagen} = props;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+
+  const { buyProducts } = useContext(dataContext);
+
   return (
     <div className='col col-sm-12 col-md-6 col-lg-4 my-4'>
     <div className='card fondo__pagina'>
@@ -24,7 +27,7 @@ const Item = (props) => {
                      {() => {
                       //function expression
                       navigate(`/Productos/${id}`);
-                      //buyProducts(props); 
+                      buyProducts(props); 
                        //function call:ejecuta
                        
                     }}

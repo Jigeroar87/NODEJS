@@ -14,6 +14,8 @@ const Detalleproductos = () => {
 
     const navigate = useNavigate();
     const { id } = useParams(); 
+
+    
   
     // o 1 o 2
   
