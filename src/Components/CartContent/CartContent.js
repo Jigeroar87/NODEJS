@@ -5,6 +5,9 @@ import CartElements from "./CartElements";
 import CartTotal from "./CartTotal";
 import Navbar from "../Navbar/Navbar";
 
+import "./CartContent.css";
+import CartForm from "./CartForm";
+
 
 
 const CartContent = () => {
@@ -17,6 +20,7 @@ const CartContent = () => {
                 <>
                 <CartElements />
                 <CartTotal />
+                <CartForm/>
                 </>
             ) : (
                 <h2 className='cart-message-center'>Your cart is empty</h2>
